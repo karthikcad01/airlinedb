@@ -1,0 +1,68 @@
+
+
+<html>
+    <head>
+        <title>airline reservation form </title>
+    </head>
+    <body background="airplane.jpg">
+
+    <form name="airline" action="inserttable.php" method="post">
+  <form name="flightdet" action="flightdet.php" method="post">
+        <center>
+        <h1><marquee>Airline Reservation System </marquee> </h1></center>
+     <hr>
+<h1>Reservation Details</h1>
+<hr>
+<br/>
+     Class:<select name="class">
+	<option selected value=""></option>
+	<option value="First class">First class</option>
+        <option value="Business class">Business class</option>
+	<option value="Economy class">Economy class</option>
+	</select>
+<br/>
+<br/>	
+
+<td><b>Journey Date</td><td>
+<input type="date" name="bdate" required/>
+<br /></td>
+
+<br/>
+<h1>Personal Details</h1>
+<hr>
+<h3><marquee>
+<font color="white">Make sure you will fill the details correctly!!</h3></font> </marquee>
+<table border="1" width="50%" height="25%">
+ <tr>
+    <th>Cid</th>
+    <th>Name</th> 
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Meal</th>
+     <th>AirID</th>
+  </tr>
+  <tr>
+ <td><input type="text" name="Cid"></td>
+ <td><input type="text" name="name"  ></td>
+ <td><input type="text" name="age" size="2"></td>
+ <td><select name="gender">
+<option selected value=""></option>
+<option value="Male">Male</option>
+<option value="Female">Female</option></td>
+
+ <td><select name="meal">
+<option selected value=""></option>
+<option value="veg">Veg</option>
+<option value="nonveg">NonVeg</option></td>
+<td><input type="text" name="AirID"></td> 
+<form method="get" action="flightdet.html"> 
+    <input type="button" class="button" onclick="location.href='flightdet.html';" value="search flight">
+</form>
+ </tr>
+</table>
+  <input type="submit" value="Submit">
+</form>
+<input type="reset" value="clear">  
+</form> 
+    </body>
+</html>
